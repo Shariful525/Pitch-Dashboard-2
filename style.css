@@ -125,11 +125,28 @@ nav {
 
 .categories div {
     text-align: center;
+    align-items: center;
 }
 
-.aura {
+.verticle-line {
+    width: 30px;
+    height: 1px;
+    rotate: 90deg;
+    background: #797979;
+    opacity: 0.2;
+}
+
+.aura, .eth, .balancer, .frax, .ribbon, .tokemark, .idle, .saddle{
     width: 150px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.floor_DAD{
+    margin-top: 10px;
 }
 
 
@@ -146,6 +163,9 @@ nav {
 .eth img {
     margin-right: 0.5rem;
     width: 15px;
+}
+.eth a{
+    font-weight: 600;
 }
 
 
@@ -287,7 +307,7 @@ nav {
     box-shadow: 0px 8px 30px rgba(26, 43, 86, 0.03);
     border-radius: 10px;
     height: 100%;
-    overflow: auto;
+        overflow: auto;
 }
 
 .pool-head {
@@ -333,11 +353,18 @@ nav {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
 }
+.pool-2 img{
+    opacity: .5;
+}
 
 .pool-3 p {
     font-weight: 400;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.pool-3 img {
+    opacity: .5;
 }
 .pool-1:hover{
     border-bottom: 2px solid black;
@@ -366,6 +393,7 @@ nav {
     width: 100%;
     
 }
+
 .cutomers th {
     padding: 10px 0;
     text-align: center;
